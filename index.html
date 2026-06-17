@@ -273,6 +273,64 @@
   header.app .role-lbl{white-space:nowrap;flex:0 0 auto;font-size:10px;font-weight:700;letter-spacing:.1em;color:#8fb0c2;text-transform:uppercase}
   header.app .role select{background-color:#fff;border:none;color:var(--navy);font-family:var(--f-ui);font-weight:700;font-size:13px;cursor:pointer;border-radius:99px;padding:8px 32px 8px 14px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23083553' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
   header.app .role select:focus{outline:2px solid var(--splash-blue)}
+
+  /* ===== Team Members ===== */
+  #teamRoot .page-head{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+  #teamRoot .page-head h1{font-family:var(--f-head);font-size:26px;color:var(--navy);margin:0 0 6px;font-weight:400}
+  #teamRoot .page-head p{margin:0;color:var(--muted);font-size:13.5px;max-width:60ch}
+  #teamRoot .page-head .spacer{flex:1}
+  #teamRoot .head-cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  #teamRoot .rolelink{font-family:var(--f-ui);font-size:13px;font-weight:600;color:var(--splash-blue);background:none;border:none;cursor:pointer;padding:8px 4px}
+  #teamRoot .rolelink:hover{text-decoration:underline}
+  .sumcards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+  .sumcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:14px}
+  .sumcard .ic{width:40px;height:40px;border-radius:10px;background:var(--accent-soft);color:var(--splash-blue);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .sumcard .n{font-family:var(--f-head);font-size:24px;color:var(--navy);line-height:1}
+  .sumcard .l{font-family:var(--f-ui);font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-top:5px}
+  .avatar{width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:var(--f-ui);font-weight:700;font-size:12px;flex:0 0 auto}
+  .namecell{display:flex;align-items:center;gap:11px}
+  .rbadge{font-family:var(--f-ui);font-size:11px;font-weight:700;padding:3px 11px;border-radius:99px;display:inline-block}
+  .rbadge.admin{background:var(--navy);color:#fff}
+  .rbadge.manager{background:var(--accent-soft);color:var(--cerulean)}
+  .rbadge.member{background:#eef2f6;color:var(--navy)}
+  .pill.active{background:var(--accent-soft);color:var(--navy)}
+  .pill.pending{background:#eef2f6;color:var(--navy)}
+  .pill.deact{background:#e9ebee;color:var(--muted)}
+  .pill.sig{background:var(--accent-soft);color:var(--cerulean)}
+  .pill.missing{background:var(--warn-soft);color:#6e560f}
+  .pill.none{background:#eef2f6;color:var(--muted)}
+  .bulkbar{display:flex;align-items:center;gap:12px;background:var(--navy);color:#fff;border-radius:var(--radius-sm);padding:10px 16px;margin-bottom:14px;font-family:var(--f-ui);font-size:13px;font-weight:600}
+  .bulkbar .spacer{flex:1}
+  .bulkbar .bb{border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;border-radius:99px;padding:6px 13px;font-family:var(--f-ui);font-size:12px;font-weight:600;cursor:pointer}
+  .bulkbar .bb:hover{background:rgba(255,255,255,.16)}
+  .ovl{position:fixed;inset:0;z-index:60;background:rgba(8,53,83,.5);display:flex;align-items:flex-start;justify-content:center;padding:44px 16px;overflow:auto}
+  .ovl-card{background:#fff;border-radius:14px;max-width:560px;width:100%;box-shadow:var(--shadow-lg);overflow:hidden}
+  .ovl-card .oh{padding:18px 22px;border-bottom:1px solid var(--line)}
+  .ovl-card .oh h3{margin:0;font-family:var(--f-head);font-size:19px;color:var(--navy);font-weight:400}
+  .ovl-card .oh p{margin:7px 0 0;font-size:12.5px;color:var(--muted)}
+  .ovl-card .ob{padding:20px 22px}
+  .ovl-card .of{padding:14px 22px;border-top:1px solid var(--line);display:flex;gap:10px;justify-content:flex-end;align-items:center;background:#fbfdff}
+  .drawer{position:fixed;inset:0;z-index:60;background:rgba(8,53,83,.5);display:flex;justify-content:flex-end}
+  .drawer-panel{background:#fff;width:460px;max-width:96vw;height:100%;overflow:auto;box-shadow:var(--shadow-lg);display:flex;flex-direction:column}
+  .drawer-panel .dh{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:13px}
+  .drawer-panel .db{padding:18px 22px;flex:1}
+  .drawer-panel .df{padding:14px 22px;border-top:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;align-items:center;background:#fbfdff}
+  .ferr{color:var(--danger);font-size:12.5px;margin-bottom:12px;background:var(--danger-soft);border:1px solid #f0c8c2;border-radius:8px;padding:9px 12px}
+  .inlinealert{display:flex;gap:9px;align-items:flex-start;background:var(--warn-soft);border:1px solid #ecd9a0;border-radius:var(--radius-sm);padding:11px 13px;font-size:12.5px;color:#6e560f;margin-bottom:14px}
+  .permrow{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:9px;padding:10px 12px;margin-bottom:8px}
+  .permrow .nm{flex:1;font-size:13px;font-weight:600;font-family:var(--f-ui)}
+  table.perm{width:100%;border-collapse:collapse;font-size:13px;box-shadow:none;border:1px solid var(--line)}
+  table.perm th,table.perm td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:center;font-family:var(--f-ui)}
+  table.perm th:first-child,table.perm td:first-child{text-align:left;font-weight:600}
+  table.perm thead th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:#f4f8fb}
+  .yes{color:var(--cerulean);font-weight:700}.nope{color:#b8c2cc;font-weight:600}.lim{color:var(--navy);font-weight:600}
+  .empty{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:48px 28px;text-align:center;box-shadow:var(--shadow-sm)}
+  .empty h2{font-family:var(--f-head);font-size:20px;color:var(--navy);font-weight:400;margin:16px 0 8px}
+  .empty p{color:var(--muted);font-size:13.5px;max-width:46ch;margin:0 auto 20px}
+  .empty .ill{color:var(--splash-blue)}
+  @media(max-width:820px){.sumcards{grid-template-columns:1fr 1fr}.drawer-panel{width:100%}}
+  @media(max-width:720px){#screen-team .col-hide{display:none}}
+
 </style>
 
 <!-- ============================ LOGIN ============================ -->
@@ -336,6 +394,7 @@
     <button data-go="designer">Template Designer</button>
     <button data-go="bulk">Bulk Upload</button>
     <button data-go="editor">Signature Editor</button>
+    <button data-go="team">Team Members</button>
   </nav>
   <span class="role"><span class="role-lbl">View as</span>
     <select id="roleSel">
@@ -467,6 +526,41 @@
     </div>
   </div>
 </div></section>
+
+<!-- ============================ TEAM MEMBERS ============================ -->
+<section class="screen" id="screen-team"><div class="body">
+  <div class="crumb"><a data-go="dashboard">Dashboard</a> &rsaquo; Team Members</div>
+  <div id="teamRoot">
+    <div class="page-head">
+      <div>
+        <h1>Team Members</h1>
+        <p>Invite, manage, and control access for everyone using Signature Studio.</p>
+      </div>
+      <div class="spacer"></div>
+      <div class="head-cta">
+        <button class="rolelink" onclick="openRole()">View Role Permissions</button>
+        <button class="btn ghost" onclick="go('bulk')">&#8682; Bulk Import Users</button>
+        <button class="btn blue" onclick="openInvite()">+ Invite Team Member</button>
+      </div>
+    </div>
+    <div id="teamAccountWrap" style="display:none;align-items:center;gap:10px;margin-bottom:16px">
+      <span class="role-lbl" style="color:var(--muted)">Account</span>
+      <select id="teamAccount" style="width:auto;min-width:240px;font-weight:700"></select>
+    </div>
+    <div class="sumcards" id="teamCards"></div>
+    <div class="toolbar">
+      <div class="search"><span class="ic">&#8981;</span><input id="teamSearch" placeholder="Search by name or email"></div>
+      <select id="teamRole" style="width:auto"><option value="all">All Roles</option><option value="admin">Splash Admin</option><option value="manager">Client Manager</option><option value="member">Client Member</option></select>
+      <select id="teamStatus" style="width:auto"><option value="all">All Statuses</option><option value="active">Active</option><option value="pending">Pending Invite</option><option value="deactivated">Deactivated</option></select>
+      <select id="teamSort" style="width:auto"><option value="name">Sort: Name</option><option value="role">Sort: Role</option><option value="login">Sort: Last Login</option><option value="invite">Sort: Invite Status</option></select>
+    </div>
+    <p id="teamPending" style="display:none;font-size:12.5px;color:var(--muted);margin:-6px 0 14px">Pending users have been invited but have not completed login setup.</p>
+    <div id="teamBulk"></div>
+    <div id="teamWrap"></div>
+    <div id="teamEmpty" style="display:none"></div>
+  </div>
+</div></section>
+
 </div><!-- /app-shell -->
 
 <div class="toast" id="toast"></div>
@@ -493,6 +587,7 @@ function go(screen){
   if(screen==='designer')syncDesigner();
   if(screen==='bulk')resetBulk();
   if(screen==='editor')syncEditor();
+  if(screen==='team')renderTeam();
 }
 document.querySelectorAll('[data-go]').forEach(el=>el.addEventListener('click',()=>go(el.dataset.go)));
 
@@ -503,6 +598,7 @@ $('roleSel').addEventListener('change',e=>{
   document.querySelector('[data-go="designer"]').style.display = r==='admin'?'':'none';
   document.querySelector('[data-go="bulk"]').style.display = r==='admin'?'':'none';
   document.querySelector('[data-go="dashboard"]').style.display = r==='user'?'none':'';
+  document.querySelector('[data-go="team"]').style.display = r==='user'?'none':'';
   if(r==='user'){go('editor');toast('End-user view: only their own signature, brand locked');}
   else if(r==='client'){go('dashboard');toast('Client manager: sees only their own team');}
   else toast('Admin: full access to all clients');
@@ -814,6 +910,212 @@ function populateBulkClients(){
     if(typeof bpeople!=='undefined' && bpeople.length){ showBulkReview(); }
   });
 })();
+
+
+/* ============ TEAM MEMBERS ============ */
+let teamClientId=null, teamCache={}, teamFilter={q:'',role:'all',status:'all',sort:'name'}, teamPage=1, teamSel=new Set(), teamWired=false, teamPageRows=[];
+const ROLE_LABEL={admin:'Splash Admin',manager:'Client Manager',member:'Client Member'};
+const STATUS_LABEL={active:'Active',pending:'Pending Invite',deactivated:'Deactivated'};
+const ICON={
+ users:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+ check:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>',
+ mail:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>',
+ pause:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="10" y1="15" x2="10" y2="9"/><line x1="14" y1="15" x2="14" y2="9"/></svg>'
+};
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function val(id){const e=$(id);return e?e.value:'';}
+function today(){return new Date().toLocaleDateString();}
+function loginRank(s){const m={'Today':0,'Yesterday':1,'2 days ago':2,'Last week':3,'3 months ago':90,'Never':99};return m[s]!=null?m[s]:50;}
+function defaultPerms(role){
+  if(role==='admin'||role==='manager')return{editOwn:true,download:true,manage:true,bulk:true,viewAll:true};
+  return{editOwn:false,download:true,manage:false,bulk:false,viewAll:false};
+}
+function teamDomain(c){const e=(c.people.find(p=>p.email)||{}).email||'';if(e&&e.includes('@'))return e.split('@')[1];return c.name.replace(/[^a-z0-9]+/gi,'').toLowerCase()+'.com';}
+function getTeam(cid){
+  if(teamCache[cid])return teamCache[cid];
+  const c=clientById(cid);const dom=teamDomain(c);const arr=[];
+  arr.push({id:'adm-'+cid,fn:'Lauren',ln:'Todd',email:'lauren@splashomnimedia.com',role:'admin',status:'active',signature:'active',lastLogin:'Today',pos:'Splash Omnimedia',perms:defaultPerms('admin'),history:['Account owner · Splash Omnimedia']});
+  c.people.forEach((p,i)=>{
+    const role=i===0?'manager':'member';
+    let status='active';
+    if(i>0&&i%9===4)status='pending';
+    else if(i>0&&i%14===7)status='deactivated';
+    const email=p.email||((p.fn||'user').toLowerCase()+'.'+String(p.ln||i).toLowerCase().replace(/[^a-z0-9]+/g,'')+'@'+dom);
+    const signature=status==='pending'?(p.email?'missing':'none'):(p.email?'active':'missing');
+    const lastLogin=status==='pending'?'Never':status==='deactivated'?'3 months ago':['Today','Yesterday','2 days ago','Last week','Today'][i%5];
+    arr.push({id:'u'+(p.pid||i)+'-'+cid,fn:p.fn,ln:p.ln,email,role,status,signature,lastLogin,pos:p.pos,perms:defaultPerms(role),history:[status==='pending'?'Invited '+today()+' · awaiting login setup':'Invitation accepted · login active']});
+  });
+  teamCache[cid]=arr;return arr;
+}
+function card(icon,n,label){return '<div class="sumcard"><span class="ic">'+ICON[icon]+'</span><div><div class="n">'+n+'</div><div class="l">'+label+'</div></div></div>';}
+function sigBadge(s){return s==='active'?'<span class="pill sig">Signature Active</span>':s==='missing'?'<span class="pill missing">Missing Info</span>':'<span class="pill none">Template Not Assigned</span>';}
+function statusBadge(s){return s==='active'?'<span class="pill active">Active</span>':s==='pending'?'<span class="pill pending">Pending Invite</span>':'<span class="pill deact">Deactivated</span>';}
+function tcaret(k){return teamFilter.sort===k?' ▲':'';}
+function rowActions(m){
+  if(m.role==='admin')return btn('edit',m.id,'Edit');
+  if(m.status==='pending')return btn('resend',m.id,'Resend Invite')+btn('edit',m.id,'Edit')+btn('cancel',m.id,'Cancel Invite');
+  if(m.status==='deactivated')return btn('reactivate',m.id,'Reactivate')+btn('remove',m.id,'Remove');
+  return btn('edit',m.id,'Edit')+btn('reset',m.id,'Reset Access')+btn('deactivate',m.id,'Deactivate');
+}
+function btn(act,id,label){return '<button class="linkbtn" data-tact="'+act+'" data-id="'+id+'">'+label+'</button>';}
+function rowHTML(m){
+  const checked=teamSel.has(m.id)?'checked':'';
+  return '<tr data-uid="'+m.id+'" class="data-row">'
+   +'<td><input type="checkbox" data-uidcb="'+m.id+'" '+checked+'></td>'
+   +'<td><div class="namecell"><span class="avatar">'+initials((m.fn+' '+m.ln).trim()||'?')+'</span><div class="who" style="font-family:var(--f-ui);font-weight:600">'+esc(m.fn)+' '+esc(m.ln)+(m.pos?'<small>'+esc(m.pos)+'</small>':'')+'</div></div></td>'
+   +'<td class="col-hide" style="color:var(--muted)">'+esc(m.email)+'</td>'
+   +'<td><span class="rbadge '+m.role+'">'+ROLE_LABEL[m.role]+'</span></td>'
+   +'<td class="col-hide">'+sigBadge(m.signature)+'</td>'
+   +'<td>'+statusBadge(m.status)+'</td>'
+   +'<td class="col-hide" style="color:var(--muted)">'+m.lastLogin+'</td>'
+   +'<td><div class="rowacts">'+rowActions(m)+'</div></td></tr>';
+}
+function renderTeam(){
+  if(teamClientId==null)teamClientId=activeClientId||store.clients[0].id;
+  const isAdmin=$('roleSel').value==='admin';
+  const accWrap=$('teamAccountWrap');
+  if(!isAdmin)teamClientId=activeClientId||teamClientId;
+  if(accWrap){accWrap.style.display=isAdmin?'flex':'none';const sel=$('teamAccount');
+    if(sel&&sel.options.length!==store.clients.length)sel.innerHTML=store.clients.slice().sort((a,b)=>a.name.localeCompare(b.name)).map(c=>'<option value="'+c.id+'">'+esc(c.name)+'</option>').join('');
+    if(sel)sel.value=teamClientId;}
+  const team=getTeam(teamClientId);
+  const active=team.filter(m=>m.status==='active').length,pending=team.filter(m=>m.status==='pending').length,deact=team.filter(m=>m.status==='deactivated').length;
+  $('teamCards').innerHTML=card('users',team.length,'Total Users')+card('check',active,'Active Users')+card('mail',pending,'Pending Invites')+card('pause',deact,'Deactivated Users');
+  $('teamPending').style.display=teamFilter.status==='pending'?'block':'none';
+  if(team.length===0){
+    $('teamEmpty').style.display='block';
+    $('teamEmpty').innerHTML='<div class="empty"><div class="ill"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><h2>Start by inviting your team</h2><p>Add team members so they can access their email signatures, update approved details, and download their finalized signature.</p><div style="display:flex;gap:10px;justify-content:center"><button class="btn blue" onclick="openInvite()">+ Invite Team Member</button><button class="btn ghost" onclick="go(\'bulk\')">Bulk Import Users</button></div></div>';
+    $('teamWrap').innerHTML='';$('teamBulk').innerHTML='';if(!teamWired)wireTeam();return;
+  }
+  $('teamEmpty').style.display='none';
+  const q=teamFilter.q.toLowerCase();
+  let list=team.filter(m=>{
+    if(q&&!((m.fn+' '+m.ln+' '+m.email).toLowerCase().includes(q)))return false;
+    if(teamFilter.role!=='all'&&m.role!==teamFilter.role)return false;
+    if(teamFilter.status!=='all'&&m.status!==teamFilter.status)return false;
+    return true;});
+  const sk=teamFilter.sort;
+  list.sort((a,b)=>{
+    if(sk==='role')return a.role.localeCompare(b.role)||(a.fn+a.ln).localeCompare(b.fn+b.ln);
+    if(sk==='login')return loginRank(a.lastLogin)-loginRank(b.lastLogin);
+    if(sk==='invite')return a.status.localeCompare(b.status);
+    if(sk==='email')return a.email.localeCompare(b.email);
+    return (a.fn+' '+a.ln).localeCompare(b.fn+' '+b.ln);});
+  const totalN=list.length,pages=Math.max(1,Math.ceil(totalN/PAGE_SIZE));
+  if(teamPage>pages)teamPage=pages;
+  const start=(teamPage-1)*PAGE_SIZE;teamPageRows=list.slice(start,start+PAGE_SIZE);
+  $('teamBulk').innerHTML=teamSel.size?('<div class="bulkbar"><span>'+teamSel.size+' selected</span><button class="bb" data-bulk="resend">Resend invites</button><button class="bb" data-bulk="deactivate">Deactivate</button><button class="bb" data-bulk="remove">Remove</button><span class="spacer"></span><button class="bb" data-bulk="clear">Clear selection</button></div>'):'';
+  const rows=teamPageRows.map(rowHTML).join('')||'<tr><td colspan="8" style="color:var(--muted)">No team members match your filters.</td></tr>';
+  const allChecked=teamPageRows.length&&teamPageRows.every(m=>teamSel.has(m.id));
+  $('teamWrap').innerHTML='<table class="data sortable"><thead><tr>'
+   +'<th style="width:34px"><input type="checkbox" data-selall '+(allChecked?'checked':'')+'></th>'
+   +'<th data-tsk="name">Name'+tcaret('name')+'</th>'
+   +'<th class="col-hide" data-tsk="email">Email'+tcaret('email')+'</th>'
+   +'<th data-tsk="role">Role'+tcaret('role')+'</th>'
+   +'<th class="col-hide">Signature</th>'
+   +'<th data-tsk="invite">Status'+tcaret('invite')+'</th>'
+   +'<th class="col-hide" data-tsk="login">Last Login'+tcaret('login')+'</th>'
+   +'<th style="text-align:right">Actions</th></tr></thead><tbody>'+rows+'</tbody></table>'+pager(totalN,teamPage,pages);
+  if(!teamWired)wireTeam();
+}
+function wireTeam(){
+  teamWired=true;
+  $('teamSearch').addEventListener('input',e=>{teamFilter.q=e.target.value;teamPage=1;renderTeam();});
+  $('teamRole').addEventListener('change',e=>{teamFilter.role=e.target.value;teamPage=1;renderTeam();});
+  $('teamStatus').addEventListener('change',e=>{teamFilter.status=e.target.value;teamPage=1;renderTeam();});
+  $('teamSort').addEventListener('change',e=>{teamFilter.sort=e.target.value;renderTeam();});
+  const acc=$('teamAccount');if(acc)acc.addEventListener('change',e=>{teamClientId=+e.target.value;teamSel.clear();teamPage=1;renderTeam();});
+  $('teamWrap').addEventListener('click',e=>{
+    const sa=e.target.closest('[data-selall]');if(sa){if(sa.checked)teamPageRows.forEach(m=>teamSel.add(m.id));else teamPageRows.forEach(m=>teamSel.delete(m.id));renderTeam();return;}
+    const cb=e.target.closest('[data-uidcb]');if(cb){if(cb.checked)teamSel.add(cb.dataset.uidcb);else teamSel.delete(cb.dataset.uidcb);renderTeam();return;}
+    const sk=e.target.closest('th[data-tsk]');if(sk){teamFilter.sort=sk.dataset.tsk;renderTeam();return;}
+    const pg=e.target.closest('[data-pg]');if(pg){teamPage=+pg.dataset.pg;renderTeam();return;}
+    const act=e.target.closest('[data-tact]');if(act){teamAction(act.dataset.tact,act.dataset.id);return;}
+    const tr=e.target.closest('tr[data-uid]');if(tr){const m=getTeam(teamClientId).find(x=>x.id===tr.dataset.uid);if(m)openEdit(m);}
+  });
+  $('teamBulk').addEventListener('click',e=>{const b=e.target.closest('[data-bulk]');if(b)teamBulkAction(b.dataset.bulk);});
+}
+function teamAction(act,id){
+  const team=getTeam(teamClientId);const m=team.find(x=>x.id===id);if(!m)return;
+  if(act==='edit')return openEdit(m);
+  if(act==='reset')return toast('Login reset email sent to '+m.email+'.');
+  if(act==='resend')return toast('Invitation resent to '+m.email+'.');
+  if(act==='reactivate'){m.status='active';m.lastLogin='Today';toast('User reactivated.');return renderTeam();}
+  if(act==='deactivate')return confirmAction({title:'Deactivate this user?',msg:'Deactivating '+m.fn+' '+m.ln+' will prevent them from logging in. Their signature record stays in history and can be restored later.',confirmLabel:'Deactivate',danger:true,onConfirm:()=>{m.status='deactivated';m.lastLogin='3 months ago';toast('User deactivated.');renderTeam();}});
+  if(act==='cancel')return confirmAction({title:'Cancel this invitation?',msg:'This withdraws the pending invite for '+m.email+'. You can re-invite them later.',confirmLabel:'Cancel invite',danger:true,onConfirm:()=>{const i=team.indexOf(m);if(i>=0)team.splice(i,1);teamSel.delete(m.id);toast('Invitation cancelled.');renderTeam();}});
+  if(act==='remove')return confirmAction({title:'Remove this user?',msg:'Removing '+m.fn+' '+m.ln+' deletes their access. This cannot be undone.',confirmLabel:'Remove user',danger:true,onConfirm:()=>{const i=team.indexOf(m);if(i>=0)team.splice(i,1);teamSel.delete(m.id);toast('User removed.');renderTeam();}});
+}
+function teamBulkAction(act){
+  const team=getTeam(teamClientId);const ids=[...teamSel];const sel=team.filter(m=>teamSel.has(m.id));
+  if(act==='clear'){teamSel.clear();return renderTeam();}
+  if(act==='resend'){toast('Invitations resent to '+sel.length+' user'+(sel.length>1?'s':'')+'.');return;}
+  if(act==='deactivate')return confirmAction({title:'Deactivate '+sel.length+' users?',msg:'They will no longer be able to log in. Signature records are preserved.',confirmLabel:'Deactivate',danger:true,onConfirm:()=>{sel.forEach(m=>m.status='deactivated');teamSel.clear();toast(sel.length+' users deactivated.');renderTeam();}});
+  if(act==='remove')return confirmAction({title:'Remove '+sel.length+' users?',msg:'This permanently removes their access and cannot be undone.',confirmLabel:'Remove',danger:true,onConfirm:()=>{teamCache[teamClientId]=team.filter(m=>!teamSel.has(m.id));teamSel.clear();toast(ids.length+' users removed.');renderTeam();}});
+}
+function mkOverlay(cls){const o=document.createElement('div');o.className=cls;document.body.appendChild(o);return o;}
+function openInvite(){
+  const isAdmin=$('roleSel').value==='admin';
+  const roleOpts=(isAdmin?['admin','manager','member']:['manager','member']).map(r=>'<option value="'+r+'">'+ROLE_LABEL[r]+'</option>').join('');
+  const o=mkOverlay('ovl');
+  o.innerHTML='<div class="ovl-card"><div class="oh"><h3>Invite Team Member</h3><p>New users will receive an email invitation with instructions to set up their login and access their signature.</p></div>'
+   +'<div class="ob"><div id="invErr" class="ferr" style="display:none"></div>'
+   +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><label class="field"><span>First Name *</span><input id="iv_fn" type="text"></label><label class="field"><span>Last Name *</span><input id="iv_ln" type="text"></label></div>'
+   +'<label class="field"><span>Email Address *</span><input id="iv_em" type="text" placeholder="name@company.com"></label>'
+   +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><label class="field"><span>Role</span><select id="iv_role">'+roleOpts+'</select></label><label class="field"><span>Signature Template</span><select id="iv_tpl"><option>Master</option><option>Not assigned</option></select></label></div>'
+   +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><label class="field"><span>Department <small style="color:var(--muted)">(optional)</small></span><input id="iv_dept" type="text"></label><label class="field"><span>Job Title <small style="color:var(--muted)">(optional)</small></span><input id="iv_title" type="text"></label></div>'
+   +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><label class="field"><span>Phone <small style="color:var(--muted)">(optional)</small></span><input id="iv_phone" type="text"></label><label class="field"><span>Location / Office <small style="color:var(--muted)">(optional)</small></span><input id="iv_loc" type="text"></label></div>'
+   +'<label style="display:flex;align-items:center;gap:9px;font-family:var(--f-ui);font-size:13px;margin-bottom:9px"><input type="checkbox" id="iv_send" checked> Send login invitation email</label>'
+   +'<label style="display:flex;align-items:center;gap:9px;font-family:var(--f-ui);font-size:13px"><input type="checkbox" id="iv_pwd" checked> Require password setup</label>'
+   +'</div><div class="of"><button class="btn ghost" data-close>Cancel</button><button class="btn blue" id="iv_btn">Send Invitation</button></div></div>';
+  o.addEventListener('click',e=>{if(e.target===o||e.target.hasAttribute('data-close'))o.remove();});
+  o.querySelector('#iv_btn').addEventListener('click',()=>{
+    const fn=val('iv_fn').trim(),ln=val('iv_ln').trim(),em=val('iv_em').trim();const errEl=o.querySelector('#invErr');
+    let err='';
+    if(!fn||!ln||!em)err='Please complete all required fields (first name, last name, email).';
+    else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))err='Please enter a valid email address.';
+    else if(getTeam(teamClientId).some(m=>m.email.toLowerCase()===em.toLowerCase()))err='That email already exists on this team.';
+    if(err){errEl.style.display='block';errEl.textContent='⚠ '+err;return;}
+    const role=val('iv_role');
+    getTeam(teamClientId).push({id:'new'+Date.now(),fn,ln,email:em,role,status:'pending',signature:'none',lastLogin:'Never',pos:val('iv_title'),dept:val('iv_dept'),phone:val('iv_phone'),loc:val('iv_loc'),perms:defaultPerms(role),history:['Invited '+today()+' · awaiting login setup']});
+    o.remove();toast('Invitation sent. The team member will receive login setup instructions by email.');teamPage=1;renderTeam();
+  });
+}
+function permRow(key,label,m){return '<div class="permrow"><span class="nm">'+label+'</span><label class="switch"><input type="checkbox" data-perm="'+key+'" '+(m.perms[key]?'checked':'')+'><span class="slider"></span></label></div>';}
+function openEdit(m){
+  const o=mkOverlay('drawer');
+  o.innerHTML='<div class="drawer-panel"><div class="dh"><span class="avatar" style="width:42px;height:42px;font-size:14px">'+initials((m.fn+' '+m.ln).trim()||'?')+'</span><div style="flex:1"><div style="font-family:var(--f-ui);font-weight:700">'+esc(m.fn)+' '+esc(m.ln)+'</div><div style="font-size:12px;color:var(--muted)">'+esc(m.email)+'</div></div><button class="linkbtn" data-close>Close</button></div>'
+   +'<div class="db">'
+   +(m.status==='deactivated'?'<div class="inlinealert"><span>&#9888;</span><span>This user is deactivated and cannot log in. Their signature record is preserved in history.</span></div>':'')
+   +'<div class="group"><h2>Profile</h2>'
+   +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><label class="field"><span>First Name</span><input id="ed_fn" value="'+esc(m.fn)+'"></label><label class="field"><span>Last Name</span><input id="ed_ln" value="'+esc(m.ln)+'"></label></div>'
+   +'<label class="field"><span>Email</span><input id="ed_em" value="'+esc(m.email)+'"></label>'
+   +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><label class="field"><span>Job Title</span><input id="ed_title" value="'+esc(m.pos||'')+'"></label><label class="field"><span>Department</span><input id="ed_dept" value="'+esc(m.dept||'')+'"></label></div>'
+   +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><label class="field"><span>Phone</span><input id="ed_phone" value="'+esc(m.phone||'')+'"></label><label class="field"><span>Mobile Phone</span><input id="ed_mobile" value="'+esc(m.mobile||'')+'"></label></div>'
+   +'<label class="field"><span>Office Location</span><input id="ed_loc" value="'+esc(m.loc||'')+'"></label></div>'
+   +'<div class="group"><h2>Access</h2><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><label class="field"><span>Role</span><select id="ed_role">'+['admin','manager','member'].map(r=>'<option value="'+r+'" '+(m.role===r?'selected':'')+'>'+ROLE_LABEL[r]+'</option>').join('')+'</select></label><label class="field"><span>Assigned Signature Template</span><select id="ed_tpl"><option>Master</option><option>Not assigned</option></select></label></div></div>'
+   +'<div class="group"><h2>Permissions</h2>'+permRow('editOwn','Can edit own signature fields',m)+permRow('download','Can download signature',m)+permRow('manage','Can manage team members',m)+permRow('bulk','Can bulk import users',m)+permRow('viewAll','Can view all team signatures',m)+'</div>'
+   +'<div class="group"><h2>Activity</h2><div style="font-size:13px;color:var(--muted)">Account status: <strong style="color:var(--ink)">'+STATUS_LABEL[m.status]+'</strong><br>Last login: <strong style="color:var(--ink)">'+m.lastLogin+'</strong></div><div style="font-size:12.5px;color:var(--muted);margin-top:8px">Invitation history: '+(m.history||[]).join('; ')+'</div></div>'
+   +'</div><div class="df"><button class="btn blue" id="ed_save">Save Changes</button><div style="display:flex;gap:8px">'+(m.role==='admin'?'':(m.status==='deactivated'?'<button class="btn ghost" id="ed_react">Reactivate</button>':'<button class="btn ghost" id="ed_deact">Deactivate</button>')+'<button class="linkbtn" id="ed_remove" style="border-color:var(--danger);color:var(--danger)">Remove</button>')+'</div></div></div>';
+  o.addEventListener('click',e=>{if(e.target===o||e.target.hasAttribute('data-close'))o.remove();});
+  o.querySelector('#ed_save').addEventListener('click',()=>{m.fn=val('ed_fn');m.ln=val('ed_ln');m.email=val('ed_em');m.pos=val('ed_title');m.dept=val('ed_dept');m.phone=val('ed_phone');m.mobile=val('ed_mobile');m.loc=val('ed_loc');m.role=val('ed_role');o.querySelectorAll('[data-perm]').forEach(cb=>m.perms[cb.dataset.perm]=cb.checked);o.remove();toast('User updated.');renderTeam();});
+  const de=o.querySelector('#ed_deact');if(de)de.addEventListener('click',()=>{o.remove();teamAction('deactivate',m.id);});
+  const re=o.querySelector('#ed_react');if(re)re.addEventListener('click',()=>{o.remove();teamAction('reactivate',m.id);});
+  const rm=o.querySelector('#ed_remove');if(rm)rm.addEventListener('click',()=>{o.remove();teamAction('remove',m.id);});
+}
+function confirmAction(opts){
+  const o=mkOverlay('ovl');
+  o.innerHTML='<div class="ovl-card" style="max-width:440px"><div class="oh"><h3>'+opts.title+'</h3></div><div class="ob"><p style="font-size:13.5px;color:var(--muted);margin:0">'+opts.msg+'</p></div><div class="of"><button class="btn ghost" data-close>Cancel</button><button class="btn '+(opts.danger?'':'blue')+'" id="cf_ok" style="'+(opts.danger?'background:var(--danger)':'')+'">'+(opts.confirmLabel||'Confirm')+'</button></div></div>';
+  o.addEventListener('click',e=>{if(e.target===o||e.target.hasAttribute('data-close'))o.remove();});
+  o.querySelector('#cf_ok').addEventListener('click',()=>{o.remove();if(opts.onConfirm)opts.onConfirm();});
+}
+function openRole(){
+  const data=[['Manage client account','Yes','Limited','No'],['Invite team members','Yes','Yes','No'],['Edit signature templates','Yes','No','No'],['Edit personal signature info','Yes','Yes','Optional'],['Bulk import users','Yes','Yes','No'],['Download own signature','Yes','Yes','Yes'],['View all users','Yes','Yes','No']];
+  const cell=v=>v==='Yes'?'<span class="yes">Yes</span>':v==='No'?'<span class="nope">No</span>':'<span class="lim">'+v+'</span>';
+  const body=data.map(r=>'<tr><td>'+r[0]+'</td><td>'+cell(r[1])+'</td><td>'+cell(r[2])+'</td><td>'+cell(r[3])+'</td></tr>').join('');
+  const o=mkOverlay('ovl');
+  o.innerHTML='<div class="ovl-card" style="max-width:640px"><div class="oh"><h3>Role Permissions</h3><p>What each role can do in Signature Studio.</p></div><div class="ob"><table class="perm"><thead><tr><th>Permission</th><th>Splash Admin</th><th>Client Manager</th><th>Client Member</th></tr></thead><tbody>'+body+'</tbody></table></div><div class="of"><button class="btn blue" data-close>Got it</button></div></div>';
+  o.addEventListener('click',e=>{if(e.target===o||e.target.hasAttribute('data-close'))o.remove();});
+}
 
 /* init */
 $('proceedBtn').addEventListener('click',()=>{
